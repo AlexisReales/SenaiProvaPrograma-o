@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliação IMC</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+       <h2>Avaliação de Índice de Massa Corporal</h2> 
+    </header>
+    <div class="container">
+        <form>
+            <input type="number" id="x" placeholder="Altura(ex: 1.70)">
+            <input type="number" id="y" placeholder="Peso(ex: 65.2)">
+            <br>
+            <input type="number" id="z" placeholder="IMC" readonly>
+            <br>
+            <button type="button" onclick="calcular()">Calcular</button>
+            <button type="button" onclick="zero()">Limpar</button>
+        </form>
+        <br>
+        
+        <table border="1">
+            <tr>
+                <td>
+                    IMC
+                </td>
+                <td>
+                    CLASSIFICAÇÃO
+                </td>
+                <td>
+                    OBESIDADE
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    MENOR QUE 18.5
+                </td>
+                <td>
+                    MAGREZA
+                </td>
+                <td>
+                    0
+                </td>
+            <tr>
+                <td>
+                    ENTRE 18.5 e 24.9
+                </td>
+                <td>
+                    NORMAL
+                </td>
+                <td>
+                    0
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    ENTRE 20.0 E 29.9
+                </td>
+                <td>
+                    SOBREPESO
+                </td>
+                <td>
+                    I
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    ENTRE 30.0 E 39.9
+                </td>
+                <td>
+                    OBESIDADE
+                </td>
+                <td>
+                    II
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    MAIOR QUE 40.0
+                </td>
+                <td>
+                    OBESIDADE GRAVE
+                </td>
+                <td>
+                    III
+                </td>
+            </tr>
+        </table>
+    <table>
+        <tbody id="tr-tabel">
+
+         </tbody>
+    </table>
+    </div>
+    <footer>
+        <div>
+            <p>
+                Aluno: Alexis Reales
+            </p>
+            <p>
+                Turma: 2B
+            <p>
+            <p>
+                Escola: Sesi senai, Escola S
+            </p>   
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
